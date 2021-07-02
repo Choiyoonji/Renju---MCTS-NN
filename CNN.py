@@ -120,4 +120,7 @@ class CNN():
         self.saver.save(self.session, model_path)
 
     def restore_model(self, model_path):
-        self.saver.restore(self.session, model_path)
+        try:
+            self.saver.restore(self.session, model_path)
+        except FileNotFoundError:
+            pass
