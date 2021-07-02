@@ -31,7 +31,7 @@ class Renju_Train():
         self.n_playout = 400 # (num of simulations for each move)
         self.batch_size = 512 # mini-batch size
         self.epochs = 5 # repeat policy_update
-        self.game_batch_num = 20
+        self.game_batch_num = 50000
         self.c_puct = 1.0
         self.buffer_size = 100000
         self.data_buffer = deque(maxlen=self.buffer_size) # push play data
