@@ -45,6 +45,8 @@ class Renju_Train():
         self.mcts_player = mcts2.MCTS(self.board, self.board_size, self.policy_value_net.policy_value_fn, self.c_puct)
         # Define root_node
         self.root_node = mcts2.Node(1, state = self.root_board, board_size = self.board_size, parent_node = None)
+        # model restore
+        self.policy_value_net.restore_model('./current_policy.model')
 
     def get_equi_data(self, play_data):
         """
