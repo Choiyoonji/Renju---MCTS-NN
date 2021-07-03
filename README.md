@@ -6,11 +6,11 @@ References :
   2. An implementation of the AlphaZero algorithm for Gomoku https://github.com/junxiaosong/AlphaZero_Gomoku.git
 
 
-    Please Install Tesorflow, numpy first.
+Please Install Tesorflow, numpy first.
 
-    Put 4 files (new_train.py, rule.py, mcts2.py, CNN.py) in same folder.
+Put 4 files (new_train.py, rule.py, mcts2.py, CNN.py) in same folder.
 
-    Run <new_train.py>!
+Run <new_train.py>!
     
 
 * You can check 'current_board state' in boardRecord.txt.
